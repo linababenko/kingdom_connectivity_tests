@@ -1,1 +1,1 @@
-# kingdom_connectivity_tets
+# kingdom_connectivity_tests
