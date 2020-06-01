@@ -47,13 +47,13 @@ describe('Test case 2', function () {
         assert.equal(result, 12);
     });
 
-    it('n = 20, m = 32, count of paths 5', function () {
+    it('n = 20, m = 32, result should equal INFINITE PATHS', function () {
         let start = performance.now()
         const result = countPaths(20, 32, [
             [2, 11], [4, 3], [16, 14], [18, 6], [15, 16], [13, 11], [6, 4], [10, 2], [1, 15], [16, 18], [13, 2], [16, 14], [18, 19], [17, 8], [2, 15], [16, 14], [6, 9], [19, 4], [5, 4], [13, 18], [12, 7], [7, 20], [13, 8], [17, 16], [8, 3], [9, 10], [2, 11], [19, 4], [10, 13], [13, 11], [3, 20], [16, 8]])
         let end = performance.now()
         t7 = end - start;
-        assert.equal(result, 5);
+        assert.equal(result, 'INFINITE PATHS');
     });
 
     after(() => {
